@@ -8,7 +8,7 @@ from parselmouth.praat import call
 from modules.utility import Utility
 from constants import DATASET_DIR, TRANSFORMED_DIR, PROGRESS_NUM
 
-class Transformation:
+class AudioTransformer:
 
     def __init__(self):
         """Default Constructor
@@ -16,6 +16,9 @@ class Transformation:
         self.utility = Utility()
         self.formant_shift_factor = 2
         self.pitch_shift = 60
+
+        # Check if the transformed data directory exists. If not, create it
+        self.utility.check_and_create_dir(TRANSFORMED_DIR)
 
     def __transform_audio(self, snd):
         """Transforms the provided audio file
@@ -61,3 +64,5 @@ class Transformation:
 
                 if checkpoint != 0 and ((idx+1) % checkpoint == 0):
                     self.utility.progress_print(len(raw_files), (idx+1), start_time)
+
+            print('\t\tSuccessfully transformed audio files.')
