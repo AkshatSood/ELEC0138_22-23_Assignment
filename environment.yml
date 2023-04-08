@@ -1,0 +1,7 @@
+name: security
+
+dependencies:
+  - python=3.9
+  - pip=22.1.*
+  # - pip:
+  #   -
