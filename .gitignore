@@ -5,6 +5,8 @@ __pycache__/
 
 # Data directories
 /dataset
+/transformed
 
 # Test files
 test*.py
+test*.wav

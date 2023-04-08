@@ -36,11 +36,19 @@ class Utility:
         if not self.dir_exists(dir_path):
             os.makedirs(dir_path)
 
-    def get_files_in_dir(self, dir_path):
-        """Get list of files in directory
+    def get_files_in_dir(self, dir_path, ext=None):
+        """Get list of files in directory with the provided extension.
+        If no extension is provided, then return a list of all the files.
+
         Args:
             dir_path (str): path of directory
+            ext (str, optional): extension of the file. Defaults to None.
+
+        Returns:
+            lst: list of file names in directory
         """
+        if ext:
+            return [f for f in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f)) and f.endswith(ext)]
         return [f for f in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f))]
     
     def get_time_taken_str(self, start_time):
