@@ -1,0 +1,2 @@
+dev-clean.tar.gz filter=lfs diff=lfs merge=lfs -text
+test-clean.tar.gz filter=lfs diff=lfs merge=lfs -text
