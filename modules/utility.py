@@ -64,6 +64,12 @@ class Utility:
         """
         time_taken = time.time() - start_time
         return str(datetime.timedelta(seconds=int(time_taken)))
+    
+    def copy_folders(self, src_folder, dest_folder):
+        for item in os.listdir(src_folder):
+            if os.path.isdir(os.path.join(src_folder, item)):
+                os.makedirs(os.path.join(dest_folder, item), exist_ok=True)
+                self.copy_folders(os.path.join(src_folder, item), os.path.join(dest_folder, item)) 
 
     def progress_print(self, total_itrs, completed_itrs, start_time):
         """Prints a progress message for the process, based on progress
