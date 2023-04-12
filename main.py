@@ -6,14 +6,14 @@ from modules.dataset import Dataset
 # Create objects for classes
 # dataset = 
 transformer = AudioTransformer()
-dataset = Dataset()
+# dataset = Dataset()
 
-print('##############################################')
-print('\tDOWNLOAD DATASET')
-print('##############################################')
-dataset.download_data()
+# print('##############################################')
+# print('\tDOWNLOAD DATASET')
+# print('##############################################')
+# dataset.download_data()
 
 print('##############################################')
 print('\tTRANSFORM AUDIO FILES')
 print('##############################################')
-# transformer.transform()
+transformer.transform(data_dir='./dataset/LibriSpeech/test-clean/', output_dir='./transformed/test-clean')

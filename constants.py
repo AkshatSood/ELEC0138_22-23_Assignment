@@ -5,4 +5,4 @@ DATASET_DIR = './dataset'
 TRANSFORMED_DIR = './transformed'
 
 # OTHER CONSTANTS 
-PROGRESS_NUM = 10
+PROGRESS_NUM = 100
