@@ -10,11 +10,14 @@ This project identifies security and privacy threats to the smart home speaker e
 
 As it is difficult to replicate the entire pipeline for the project with the provided code, we have provided a demo of the project which can be used to demonstrate the various processes used in the assignment.
 
+![Demo Pipeline](./figs/ELEC0138_implementation_arch.png)
+
 * The project demo can be run from the [main.ipynb](./main.ipynb) file.
 * This demo uses the raw audio files from the [raw](./demo/raw) folder. The other files in the [demo](./demo) folder (and the subfolders) can be deleted, as these will get produced during the project, as described in the [project structure](#project-structure) below.
 * The trained machine learning model from [models](./models) is used during this demo.
 * The outputs produced in the demo are already included in [main.ipynb](./main.ipynb) and [demo](./demo).
 * The full run through of the demo is demonstrated in the [project video](https://liveuclac-my.sharepoint.com/:v:/r/personal/uceesoo_ucl_ac_uk/Documents/ELEC0138\%20Group\%2011\%20Assignment\%20Presentation.mp4?csf=1&web=1&e=jR4c1u).
+* The figure above describes what this process looks like.
 
 ## Datasets
 
@@ -58,6 +61,7 @@ The project structure with descriptions for each file/directory have been provid
     * [transformed](./demo/transformed) - Contains the transformed audio files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
     * [transformed_decrypted](./demo/transformed_decrypted) - Contains the decrypted files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
     * [transformed_encrypted](./demo/transformed_encrypted) - Contains the encrypted files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
+* [figs](./figs) - Contains some figures used for this file.
 * [keys](./keys) - Contains keys used for the encryption-decryption process.
     * [AES_key.enc](./keys/AES_key.enc) - TODO
     * [AES_key.txt](./keys/AES_key.txt) - TODO
