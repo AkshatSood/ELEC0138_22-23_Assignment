@@ -13,7 +13,7 @@ As it is difficult to replicate the entire pipeline for the project with the pro
 ![Demo Pipeline](./figs/ELEC0138_implementation_arch.png)
 
 * The project demo can be run from the [main.ipynb](./main.ipynb) file.
-* This demo uses the raw audio files from the [raw](./demo/raw) folder. The other files in the [demo](./demo) folder (and the subfolders) can be deleted, as these will get produced during the project, as described in the [project structure](#project-structure) below.
+* This demo uses the raw audio files from the [raw](./demo/raw) folder. The other files in the [demo](./demo) folder (and the subfolders) can be deleted, as these will get produced during the project, as described in the project structure below.
 * The trained machine learning model from [models](./models) is used during this demo.
 * The outputs produced in the demo are already included in [main.ipynb](./main.ipynb) and [demo](./demo).
 * The full run through of the demo is demonstrated in the [project video](https://liveuclac-my.sharepoint.com/:v:/r/personal/uceesoo_ucl_ac_uk/Documents/ELEC0138\%20Group\%2011\%20Assignment\%20Presentation.mp4?csf=1&web=1&e=jR4c1u).
@@ -24,13 +24,13 @@ As it is difficult to replicate the entire pipeline for the project with the pro
 Due to the size of the datasets, they are not included in the repository. However, the datasets used in this project can be downloaded from the following locations.
 
 * _Training Dataset_: Used for training the machine learning gender detection model.
-    * Can be downloaded from TODO
+    * Can be downloaded from https://github.com/x4nth055/gender-recognition-by-voice
 * _Testing Dataset_: Used for evaluating the various sections of the code (i.e., audio transformation, encryption-decryption, speech-to-text, gender detection using the machine learning model).
     * Can be downloaded from TODO
 
 ## Project Structure
 
-The project structure with descriptions for each file/directory have been provided below. It should be noted that various portions of the project were developed independently, and the processed files from relevant portions were shared after processing. Thus, there is no direct way to run the entire project pipeline. An example demo has been provided to run the pipeline [here](#running-the-project-demo).
+The project structure with descriptions for each file/directory have been provided below. It should be noted that various portions of the project were developed independently, and the processed files from relevant portions were shared after processing. Thus, there is not direct way to run the entire project pipeline.
 
 * [.gitattributes](./.gitattributes) - Git attributes
 * [.gitignore](./.gitignore) - Git ignore 
@@ -51,8 +51,8 @@ The project structure with descriptions for each file/directory have been provid
 * [swresample-4.dll](./swresample-4.dll) - TODO
 * [swscale-7.dll](./swscale-7.dll) - TODO
 * [MLP model](./MLP&#32model) - Contains the code for the machine learning gender detection model.
-    * [Gender Classification_final.ipynb](./MLP&#32model/Gender&#32Classification_final.ipynb) - TODO
-    * [dataset.txt](./MLP&#32model/dataset.txt) - TODO
+    * [Gender Classification_final.ipynb](./MLP&#32model/Gender&#32Classification_final.ipynb) - The final trained model with keras tuner, accuracy of gender dectection
+    * [dataset.txt](./MLP&#32model/dataset.txt) - The training model dataset comes from https://github.com/x4nth055/gender-recognition-by-voice 
 * [demo](./demo) - Folder used to store the files for the demo.
     * [processed_audio_result.csv](./demo/processed_audio_result.csv) - Speech-to-text results for the transformed audio files.  This can be safely deleted before running the demo.
     * [raw_audio_result.csv](./demo/raw_audio_result.csv) - Speech-to-text results for the raw audio files.  The files in this folder can be safely deleted before running the demo.
