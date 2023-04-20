@@ -63,30 +63,30 @@ The project structure with descriptions for each file/directory have been provid
     * [transformed_encrypted](./demo/transformed_encrypted) - Contains the encrypted files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
 * [figs](./figs) - Contains some figures used for this file.
 * [keys](./keys) - Contains keys used for the encryption-decryption process.
-    * [AES_key.enc](./keys/AES_key.enc) - TODO
-    * [AES_key.txt](./keys/AES_key.txt) - TODO
-    * [AES_key_dec.txt](./keys/AES_key_dec.txt) - TODO
-    * [private_key.txt](./keys/private_key.txt) - TODO
-    * [public_key.txt](./keys/public_key.txt) - TODO
+    * [AES_key.enc](./keys/AES_key.enc) - Contains encrypted AES key
+    * [AES_key.txt](./keys/AES_key.txt) - Contains generated AES key
+    * [AES_key_dec.txt](./keys/AES_key_dec.txt) - Contains decrypted AES key for audio encryption
+    * [private_key.txt](./keys/private_key.txt) - Contains RSA public key for AES key encryption
+    * [public_key.txt](./keys/public_key.txt) - Contains RSA private key for AES key decryption
 * [models](./models) - Contains the saved gender detection machine learning model. This model is used during the demo.
     * [model_saved.pkl](./models/model_saved.pkl) - The trained gender detection machine learning model. This is used for the demo.
 * [modules](./modules) - Contains various modules used in the project.
     * [transformation.py](./modules/transformation.py) - Used to run the audio transformation process.
     * [utility.py](./modules/utility.py) - Contains various utility functions used by the audio transformation process.
-    * [encryption](./modules/encryption) - Contains the code used for the encryption-decryption process.
-        * [AES_RSA_original_trans_file.ipynb](./modules/encryption/AES_RSA_original_trans_file.ipynb) - TODO
-        * [AES_original_file.ipynb](./modules/encryption/AES_original_file.ipynb) - TODO
-        * [AES_original_trans_file.ipynb](./modules/encryption/AES_original_trans_file.ipynb) - TODO
-        * [RSA_original_file.ipynb](./modules/encryption/RSA_original_file.ipynb) - TODO
-        * [RSA_original_trans_file.ipynb](./modules/encryption/RSA_original_trans_file.ipynb) - TODO
-        * [AES](./modules/encryption/AES) - TODO
-            * [AES_file.ipynb](./modules/encryption/AES/AES_file.ipynb) - TODO
+    * [encryption](./modules/encryption) - Contains the code used for the encryption-decryption implementation process.
+        * [AES_RSA_original_trans_file.ipynb](./modules/encryption/AES_RSA_original_trans_file.ipynb) - Contains the code of audio encrypted with AES, and AES key encrypted with RSA 
+        * [AES_original_file.ipynb](./modules/encryption/AES_original_file.ipynb) - Contains the code of audio encrypted with AES
+        * [AES_original_trans_file.ipynb](./modules/encryption/AES_original_trans_file.ipynb) - Contains the code of transformed audio encrypted with AES
+        * [RSA_original_file.ipynb](./modules/encryption/RSA_original_file.ipynb) - Contains the code of audio encrypted with RSA
+        * [RSA_original_trans_file.ipynb](./modules/encryption/RSA_original_trans_file.ipynb) - Contains the code of transformed audio encrypted with RSA
+        * [AES](./modules/encryption/AES) - Contains the code and generated files of the AES encryption-decryption implementation process
+            * [AES_file.ipynb](./modules/encryption/AES/AES_file.ipynb) - Contains the code of audio encrypted with AES
             * [audio](./modules/encryption/AES/audio) - Contains the sample raw audio files used for AES encryption-decryption.
             * [audio_decrypted_AES](./modules/encryption/AES/audio_decrypted_AES) - Contains the sample audio files which have been decrypted.
             * [audio_encrypted_AES](./modules/encryption/AES/audio_encrypted_AES) - Contains the sample audio files which have been encrypted.
             * [key_AES](./modules/encryption/AES/key_AES) - Contains keys used for the AES encryption-decryption process.
-        * [RSA](./modules/encryption/RSA) - TODO
-            * [RSA_file.ipynb](./modules/encryption/RSA/RSA_file.ipynb) - TODO
+        * [RSA](./modules/encryption/RSA) - Contains the code and generated files of the RSA encryption-decryption implementation process
+            * [RSA_file.ipynb](./modules/encryption/RSA/RSA_file.ipynb) - Contains the code of audio encrypted with RSA
             * [audio](./modules/encryption/RSA/audio) - Contains the sample raw audio files used for RSA encryption-decryption.
             * [audio_decrypted_RSA](./modules/encryption/RSA/audio_decrypted_RSA) - Contains the sample audio files which have been decrypted.
             * [audio_encrypted_RSA](./modules/encryption/RSA/audio_encrypted_RSA) - Contains the sample audio files which have been encrypted.
