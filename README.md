@@ -26,7 +26,7 @@ Due to the size of the datasets, they are not included in the repository. Howeve
 * _Training Dataset_: Used for training the machine learning gender detection model.
     * Can be downloaded from https://github.com/x4nth055/gender-recognition-by-voice
 * _Testing Dataset_: Used for evaluating the various sections of the code (i.e., audio transformation, encryption-decryption, speech-to-text, gender detection using the machine learning model).
-    * Can be downloaded from TODO
+    * Can be downloaded from https://www.openslr.org/12
 
 ## Project Structure
 
@@ -35,28 +35,28 @@ The project structure with descriptions for each file/directory have been provid
 * [.gitattributes](./.gitattributes) - Git attributes
 * [.gitignore](./.gitignore) - Git ignore 
 * [README.md](./README.md) - This file :)
-* [avcodec-60.dll](./avcodec-60.dll) - TODO
-* [avdevice-60.dll](./avdevice-60.dll) - TODO
-* [avfilter-9.dll](./avfilter-9.dll) - TODO
-* [avformat-60.dll](./avformat-60.dll) - TODO
-* [avutil-58.dll](./avutil-58.dll) - TODO
+* [avcodec-60.dll](./avcodec-60.dll) - Ffmpeg/ffprobe dependency
+* [avdevice-60.dll](./avdevice-60.dll) - Ffmpeg/ffprobe dependency
+* [avfilter-9.dll](./avfilter-9.dll) - Ffmpeg/ffprobe dependency
+* [avformat-60.dll](./avformat-60.dll) - Ffmpeg/ffprobe dependency
+* [avutil-58.dll](./avutil-58.dll) - Ffmpeg/ffprobe dependency
 * [constants.py](./constants.py) - Used to store constants used by the audio transformation code.
 * [environment.yml](./environment.yml) - Used to create the conda environment which was used to run the audio transformation code.
-* [ffmpeg.exe](./ffmpeg.exe) - TODO
-* [ffplay.exe](./ffplay.exe) - TODO
-* [ffprobe.exe](./ffprobe.exe) - TODO
+* [ffmpeg.exe](./ffmpeg.exe) - Audio processing library for parsing .flac audio files
+* [ffplay.exe](./ffplay.exe) - Audio processing library for parsing .flac audio files
+* [ffprobe.exe](./ffprobe.exe) - Audio processing library for parsing .flac audio files
 * [main.ipynb](./main.ipynb) - Used to run the __demo__ for the project.
 * [main.py](./main.py) - Used to run the audio transformation code. Calls the transformation function with the location for the dataset directory (not included in the repository).
-* [postproc-57.dll](./postproc-57.dll) - TODO
-* [swresample-4.dll](./swresample-4.dll) - TODO
-* [swscale-7.dll](./swscale-7.dll) - TODO
+* [postproc-57.dll](./postproc-57.dll) - Ffmpeg/ffprobe dependency
+* [swresample-4.dll](./swresample-4.dll) - Ffmpeg/ffprobe dependency
+* [swscale-7.dll](./swscale-7.dll) - Ffmpeg/ffprobe dependency
 * [MLP model](./MLP&#32model) - Contains the code for the machine learning gender detection model.
     * [Gender Classification_final.ipynb](./MLP&#32model/Gender&#32Classification_final.ipynb) - The final trained model with keras tuner, accuracy of gender dectection
     * [dataset.txt](./MLP&#32model/dataset.txt) - The training model dataset comes from https://github.com/x4nth055/gender-recognition-by-voice 
 * [demo](./demo) - Folder used to store the files for the demo.
     * [processed_audio_result.csv](./demo/processed_audio_result.csv) - Speech-to-text results for the transformed audio files.  This can be safely deleted before running the demo.
     * [raw_audio_result.csv](./demo/raw_audio_result.csv) - Speech-to-text results for the raw audio files.  The files in this folder can be safely deleted before running the demo.
-    * [text.txt](./demo/text.txt) - TODO
+    * [text.txt](./demo/text.txt) - Speech-to-text ground truth for the raw audio files.
     * [raw](./demo/raw) - Contains the raw audio files for the demo. This should not be deleted when running the demo, as these files are used during the demo.
     * [transformed](./demo/transformed) - Contains the transformed audio files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
     * [transformed_decrypted](./demo/transformed_decrypted) - Contains the decrypted files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
