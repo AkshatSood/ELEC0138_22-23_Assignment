@@ -56,7 +56,7 @@ The project structure with descriptions for each file/directory have been provid
 * [demo](./demo) - Folder used to store the files for the demo.
     * [processed_audio_result.csv](./demo/processed_audio_result.csv) - Speech-to-text results for the transformed audio files.  This can be safely deleted before running the demo.
     * [raw_audio_result.csv](./demo/raw_audio_result.csv) - Speech-to-text results for the raw audio files.  The files in this folder can be safely deleted before running the demo.
-    * [text.txt](./demo/text.txt) - Speech-to-text ground truth for the raw audio files.
+    * [text.txt](./demo/text.txt) - Speech-to-text ground truth for the raw audio files. This should not be deleted when running the demo, as the ground truth are used during the demo.
     * [raw](./demo/raw) - Contains the raw audio files for the demo. This should not be deleted when running the demo, as these files are used during the demo.
     * [transformed](./demo/transformed) - Contains the transformed audio files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
     * [transformed_decrypted](./demo/transformed_decrypted) - Contains the decrypted files produced during the demo. The files in this folder folder can be safely deleted before running the demo.
